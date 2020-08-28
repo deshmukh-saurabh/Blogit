@@ -11,7 +11,7 @@ from ..models import Post
 def total_posts():
     return Post.published.count()
 
-@register.assignment_tag
+@register.simple_tag
 def get_most_popular_tags(count=5):
     return Post.tags.most_common()[:count]
 
@@ -20,7 +20,7 @@ def show_latest_posts(count=5):
     latest_posts = Post.published.order_by('-publish')[:count]
     return {'latest_posts': latest_posts}
 
-@register.assignment_tag
+@register.simple_tag
 def get_most_commented_posts(count=5):
     return Post.published.annotate(
         total_comments=Count('comments')

@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('updated', models.DateTimeField(auto_now=True)),
                 ('active', models.BooleanField(default=True)),
-                ('post', models.ForeignKey(related_name='comments', to='blog.Post')),
+                ('post', models.ForeignKey(related_name='comments', to='blog.Post',on_delete=models.CASCADE)),
             ],
             options={
                 'ordering': ('created',),
