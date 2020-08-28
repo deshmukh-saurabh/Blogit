@@ -35,7 +35,7 @@ SECRET_KEY = os.environ['SECRET_KEY'] # Instead of your actual secret key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DJANGO_DEBUG'] != 'False'
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://nameless-caverns-00788.herokuapp.com/"]
+ALLOWED_HOSTS = ['*']
 
 SITE_ID = 1
 
