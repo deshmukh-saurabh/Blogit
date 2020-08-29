@@ -3,10 +3,10 @@ A simple blogging website made using django -- Version 1.0
 
 ### Prototype Screenshots
 - Home view
-![](https://github.com/deshmukh-saurabh/Blogit/screenshots/home.png)
+![](https://github.com/deshmukh-saurabh/Blogit/blob/master/screenshots/home.png)
 
 - Post Detail View
-![](https://github.com/deshmukh-saurabh/Blogit/screenshots/details.png)
+![](https://github.com/deshmukh-saurabh/Blogit/blob/master/screenshots/details.png)
 
 ### Features:
 1. RSS feed.
